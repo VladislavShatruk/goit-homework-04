@@ -88,9 +88,12 @@ button {
 }
 
 .header-menu-item {
+
 }
 
 .header-menu-link {
+    display: flex;
+    flex-direction: column;
     color: #2E2F42;
     font-size: 16px;
     font-weight: 500;
@@ -101,6 +104,16 @@ button {
 
 .header-menu-link:hover {
     color:#404bbf
+}
+
+.header-menu-link:active:after {
+    content: " ";
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background: #404BBF;
+    display: inline-block;
+    margin-top: 20px;
 }
 
 .header-menu-link:focus {
@@ -167,10 +180,13 @@ address {
     background-color:#2E2F42;
     background-image: linear-gradient(
         180deg,
-        rgba(46, 47, 66, 0.7) 0%,
-        rgba(46, 47, 66, 0.7) 100%
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office.jpg) ;
+    url(../images/people-office.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
 }
 
 .hero-title {
@@ -302,6 +318,21 @@ address {
     letter-spacing: 0.02em;
 }
 
+.team-soc-menu{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 24px;
+}
+
+.team-soc-list {
+    
+}
+
+.team-soc-icon {
+    fill: #080808;
+    flex-shrink: 0;
+}
 
 /* ================================== */
 /* PORTFOLIO */
@@ -330,7 +361,6 @@ address {
     gap: 48px 24px;
 }
 .portfolio-card {
-    /* flex-basis: calc((100%-48px)/3); */
     width: calc((100% - 48px) / 3); 
 }
 .portfolio-card-container {
@@ -367,6 +397,10 @@ address {
 }
 
 .footer-container {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 120px;
 }
 
 
@@ -399,4 +433,32 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
+}
+.soc-media-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 24px;
+}
+.soc-media-text {
+    color: #FFF;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing:0.02em;
+}
+
+.soc-media-menu {
+    
+}
+
+.soc-media-list {
+
+}
+
+.soc-media-link {
+
+}
+
+.soc-media-icon {
+    fill: #F4F4FD;
 }
