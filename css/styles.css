@@ -236,13 +236,19 @@ address {
     background-color: #FFF;
     padding: 120px 0;
 }
-.features-item {
-    width: calc((100% - 72px) / 4);
-}
+
 .features-list {
     display: flex;
     gap: 24px;
 }
+.features-item {
+    width: calc((100% - 72px) / 4);
+}
+
+.features-icon {
+    
+}
+
 .features-list-subtitle {
     color: #2E2F42;
     font-size: 20px;
@@ -316,6 +322,7 @@ address {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .team-soc-menu{
@@ -326,7 +333,7 @@ address {
 }
 
 .team-soc-list {
-    
+
 }
 
 .team-soc-icon {
@@ -398,8 +405,6 @@ address {
 
 .footer-container {
     display: flex;
-    justify-content:flex-start;
-    align-items: center;
     gap: 120px;
 }
 
@@ -436,19 +441,28 @@ address {
 }
 .soc-media-container {
     display: flex;
-    justify-content:center;
-    align-items: center;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
     gap: 24px;
+}
+.soc-media-container:first-child {
+    color:#4D5AE5;
+    align-items: flex-start;
 }
 .soc-media-text {
     color: #FFF;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing:0.02em;
+    display: inline-block;
 }
 
 .soc-media-menu {
-    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 24px;
 }
 
 .soc-media-list {
